@@ -18,7 +18,11 @@ QUEST LOG .... sealed bids, ZK settlement, private execution
                MCP servers, debugging & diagnostics
 ```
 
+<img src="divider.svg" alt="" width="100%">
+
 ## 🏆 High Scores
+
+<p align="center"><img src="cabinet.svg" alt="Trophy cabinet: 2 gold, 3 silver, 3 bronze and 6 other wins" width="100%"></p>
 
 | RANK | EVENT | PROJECT |
 |:---:|---|---|
@@ -75,6 +79,8 @@ A payment gateway for Kaspa. [Live demo](https://kaspay-flame.vercel.app)
 - 🥉 **[Tirai](https://github.com/PugarHuda/tirai)**: a confidential multi-dealer RFQ/OTC desk with atomic DvP settlement, live on Canton Devnet
 - 🥉 **[Amanat](https://github.com/PugarHuda/amanat)**: signed weather intelligence a contract acts on by itself, with ERC-8183 on-chain settlement
 
+<img src="divider.svg" alt="" width="100%">
+
 ## 🎒 Inventory
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
@@ -107,11 +113,23 @@ A payment gateway for Kaspa. [Live demo](https://kaspay-flame.vercel.app)
   <img alt="Snake eating my contribution graph" src="https://raw.githubusercontent.com/PugarHuda/PugarHuda/output/github-snake.svg">
 </picture>
 
+## 👀 Spectators
+
+<p align="center"><img src="guestbook.svg" alt="Visitors who joined the party, watching HUDA" width="100%"></p>
+
+<p align="center">
+  <a href="https://github.com/PugarHuda/PugarHuda/issues/new?title=%F0%9F%91%BE%20Join%20the%20party&body=Just%20press%20Submit%20and%20your%20pixel%20character%20will%20appear%20on%20Huda%27s%20profile%20in%20about%20a%20minute."><img src="https://img.shields.io/badge/%F0%9F%91%BE_PRESS_START-JOIN_THE_PARTY-FF004D?style=for-the-badge&labelColor=1D2B53" alt="Join the party"></a>
+  <br><sub>Stopped by? Press Submit on the issue that opens and your pixel character will show up here.</sub>
+</p>
+
+<img src="divider.svg" alt="" width="100%">
+
 ## 📫 Multiplayer
 
 [![Email](https://img.shields.io/badge/Email-hudapugar%40gmail.com-FF004D?style=flat-square&logo=gmail&logoColor=white)](mailto:hudapugar@gmail.com)
 [![X](https://img.shields.io/badge/X-%40BangDropID-000000?style=flat-square&logo=x&logoColor=white)](https://x.com/BangDropID)
 [![GitHub](https://img.shields.io/badge/GitHub-PugarHuda-1D2B53?style=flat-square&logo=github&logoColor=white)](https://github.com/PugarHuda)
+![Players joined](https://komarev.com/ghpvc/?username=PugarHuda&label=PLAYERS%20JOINED&color=ff004d&style=flat-square)
 
 ---
 

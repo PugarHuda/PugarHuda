@@ -1,0 +1,50 @@
+name: Update spectators
+
+on:
+  issues:
+    types: [opened]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: guestbook
+  cancel-in-progress: false
+
+jobs:
+  spectators:
+    if: github.event_name == 'workflow_dispatch' || contains(github.event.issue.title, 'Join the party')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      # Newest first. Only the login is used, and it is drawn as pixels, never as raw SVG text.
+      - name: Collect spectators
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api --paginate "repos/$GITHUB_REPOSITORY/issues?state=all&per_page=100" \
+            --jq '.[] | select(.pull_request | not) | select(.user.type == "User")
+                  | select(.title | contains("Join the party")) | .user.login' > spectators.txt
+
+      - name: Draw spectators
+        run: python3 -I scripts/pixel_art.py guestbook spectators.txt guestbook.svg
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add guestbook.svg
+          git diff --cached --quiet || { git commit -m "Update spectators" && git push; }
+
+      - name: Welcome and close the issue
+        if: github.event_name == 'issues'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NUMBER: ${{ github.event.issue.number }}
+        run: |
+          gh issue close "$NUMBER" --repo "$GITHUB_REPOSITORY" \
+            --comment "👾 Welcome to the party! Your pixel character is now watching on https://github.com/PugarHuda"
