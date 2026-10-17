@@ -90,6 +90,16 @@ A payment gateway for Kaspa. [Live demo](https://kaspay-flame.vercel.app)
 ![Circom](https://img.shields.io/badge/Circom-ZK-6E40C9?style=flat-square)
 ![MCP](https://img.shields.io/badge/MCP-Agents-D97757?style=flat-square)
 
+## 📊 Player Stats
+
+<p align="center">
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=PugarHuda&show_icons=true&include_all_commits=true&count_private=true&bg_color=1d2b53&title_color=ffec27&text_color=fff1e8&icon_color=29adff&ring_color=ff004d&border_color=0b1229&border_radius=0" alt="Huda's GitHub stats">
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=PugarHuda&layout=compact&langs_count=8&bg_color=1d2b53&title_color=ffec27&text_color=fff1e8&border_color=0b1229&border_radius=0" alt="Top languages">
+</p>
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=PugarHuda&background=1D2B53&border=0B1229&stroke=29ADFF&ring=FF004D&fire=FFA300&currStreakNum=FFF1E8&sideNums=FFF1E8&currStreakLabel=FFEC27&sideLabels=FFEC27&dates=C2C3C7&border_radius=0" alt="Contribution streak">
+</p>
+
 ## 🐍 Contribution Snake
 
 <picture>
