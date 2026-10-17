@@ -1,9 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/PugarHuda/PugarHuda/live/banner.svg" alt="HUDA, 14x hackathon winner, AI agents / Web3 / ZK. The sky follows the time in Jakarta." width="100%">
-</p>
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=14&duration=2800&pause=900&color=29ADFF&center=true&vCenter=true&width=720&lines=PLAYER+1%3A+HUDA;14x+HACKATHON+WINNER;ZK+%2F+AI+AGENTS+%2F+WEB3;PRESS+START+TO+SHIP" alt="PLAYER 1: HUDA">
+  <img src="https://raw.githubusercontent.com/PugarHuda/PugarHuda/live/banner.svg" alt="HUDA, 14x hackathon winner, AI agents / Web3 / ZK. The sky follows the time, weather and holidays in Jakarta." width="100%">
 </p>
 
 ## 👾 Player Profile
@@ -24,28 +20,30 @@ QUEST LOG .... sealed bids, ZK settlement, private execution
 
 ## 🏆 High Scores
 
-<p align="center"><img src="cabinet.svg" alt="Trophy cabinet: 2 gold, 3 silver, 3 bronze and 6 other wins" width="100%"></p>
-
 <p align="center"><img src="worldmap.svg" alt="World map: 14 cleared hackathon stages, numbered as in the table below" width="100%"></p>
 
 | STAGE | RANK | EVENT | PROJECT |
 |:---:|:---:|---|---|
-| 1 | 🥇 1ST | Portaldot Online Mini Hackathon S1, Builder Tools | pdk |
-| 2 | 🥇 1ST | iExec Vibe Coding Challenge 2026 | Diam |
-| 3 | 🥈 2ND | ETHGlobal, ENS track | Batas |
-| 4 | 🥈 2ND | Codemod Boring AI Hackathon | Brownie to Ape |
-| 5 | 🥈 2ND | Arkiv Ideathon 2026, Other track | Layak |
-| 6 | 🥉 3RD | Kite AI Global Hackathon 2026 by Encode Club, Novel track | Kutip |
-| 7 | 🥉 3RD | HackCanton Season #2 | Tirai |
-| 8 | 🥉 3RD | Telegraph Hackathon Season I, Evaluation WASMs | Amanat |
-| 9 | 🏅 5TH | Stellar Hacks: Real-World ZK | Tukar |
-| 10 | 🏅 6TH | CROO Agent Hackathon | Jailbreak-My-Agent |
-| 11 | ⭐ BEST | Tatum × Sui Hackathon, Best Walrus Integration | Sealed Pair |
-| 12 | ⭐ WIN | Binance Agent OS Mini Hackathon, Track A | Jaga |
-| 13 | ⭐ FINAL | Stellar APAC Hackathon, Grand Finalist | Tukar |
-| 14 | ⭐ TOP 10 | Kaspathon, Top 10 Finalist + Community Choice | KasPay |
+| 1 | 🥇 1ST | Portaldot Online Mini Hackathon S1, Builder Tools | [pdk](https://github.com/PugarHuda/portaldot-dev-kit) |
+| 2 | 🥇 1ST | iExec Vibe Coding Challenge 2026 | [Diam](https://github.com/PugarHuda/diam) |
+| 3 | 🥈 2ND | ETHGlobal, ENS track | [Batas](https://github.com/PugarHuda/batas) |
+| 4 | 🥈 2ND | Codemod Boring AI Hackathon | [Brownie to Ape](https://github.com/PugarHuda/brownie-to-ape) |
+| 5 | 🥈 2ND | Arkiv Ideathon 2026, Other track | [Layak](https://github.com/PugarHuda/arkiv-ideathon) |
+| 6 | 🥉 3RD | Kite AI Global Hackathon 2026 by Encode Club, Novel track | [Kutip](https://github.com/PugarHuda/kutip) |
+| 7 | 🥉 3RD | HackCanton Season #2 | [Tirai](https://github.com/PugarHuda/tirai) |
+| 8 | 🥉 3RD | Telegraph Hackathon Season I, Evaluation WASMs | [Amanat](https://github.com/PugarHuda/amanat) |
+| 9 | 🏅 5TH | Stellar Hacks: Real-World ZK | [Tukar](https://github.com/PugarHuda/tukar) |
+| 10 | 🏅 6TH | CROO Agent Hackathon | [Jailbreak-My-Agent](https://github.com/PugarHuda/jailbreak-my-agent) |
+| 11 | ⭐ BEST | Tatum × Sui Hackathon, Best Walrus Integration | [Sealed Pair](https://github.com/PugarHuda/sealed-pair) |
+| 12 | ⭐ WIN | Binance Agent OS Mini Hackathon, Track A | [Jaga](https://github.com/PugarHuda/jaga-agent) |
+| 13 | ⭐ FINAL | Stellar APAC Hackathon, Grand Finalist | [Tukar](https://github.com/PugarHuda/tukar) |
+| 14 | ⭐ TOP 10 | Kaspathon, Top 10 Finalist + Community Choice | [KasPay](https://github.com/PugarHuda/kaspay) |
 
-## 🕹️ Winning Projects
+## 🕹️ Stage Select
+
+<details>
+<summary><b>▶ WINNING PROJECTS</b> · what each stage was about</summary>
+<br>
 
 **[pdk](https://github.com/PugarHuda/portaldot-dev-kit): Portaldot Dev Kit** 🥇
 Builder tooling for Portaldot. Its FailLens turns cryptic transaction failures into clear, actionable diagnoses.
@@ -55,9 +53,33 @@ Builder tooling for Portaldot. Its FailLens turns cryptic transaction failures i
 Hidden amounts, Vickrey-fair RFQ pricing, AI-native via MCP. [Live demo](https://private-otc.vercel.app)
 `TypeScript` `iExec Nox` `MCP`
 
+**[Batas](https://github.com/PugarHuda/batas): Mandate-Bound Market Maker** 🥈
+An autonomous market maker on 1inch Aqua that can't exceed the mandate it was granted.
+`Solidity` `1inch Aqua` `ENS`
+
+**[Brownie to Ape](https://github.com/PugarHuda/brownie-to-ape): Migration Codemod** 🥈
+A 17-pass Brownie → ApeWorx migration codemod, validated on Yearn Finance with zero false positives.
+`Codemod` `Python` `Ethereum`
+
+**[Layak](https://github.com/PugarHuda/arkiv-ideathon): Fitness Certificates on Arkiv** 🥈
+Indonesian crane & forklift fitness certificates modeled as Arkiv entities.
+`Arkiv` `Data Modeling`
+
 **[Kutip](https://github.com/PugarHuda/kutip): Citations That Pay** 🥉
 AI research agent on Kite AI that pays the sources it cites.
 `TypeScript` `Kite AI` `AI Agents`
+
+**[Tirai](https://github.com/PugarHuda/tirai): Confidential RFQ Desk on Canton** 🥉
+A multi-dealer RFQ/OTC desk with atomic DvP settlement, live on Canton Devnet.
+`TypeScript` `Canton` `Privacy`
+
+**[Amanat](https://github.com/PugarHuda/amanat): Signed Weather Intelligence** 🥉
+Weather intelligence a contract acts on by itself, with ERC-8183 on-chain settlement.
+`Rust` `WASM` `Base`
+
+**[Tukar](https://github.com/PugarHuda/tukar): Private Cross-Border Payments on Stellar** 🏅
+Confidential remittance corridors with real fiat in and out, settled with ZK proofs on Soroban.
+`Circom` `Soroban` `Stellar` `ZK`
 
 **[Jailbreak-My-Agent](https://github.com/PugarHuda/jailbreak-my-agent): Paid Red-Teaming Agent** 🏅
 A paid CROO CAP agent that red-teams other agents' behavior, settled in USDC on Base.
@@ -67,25 +89,34 @@ A paid CROO CAP agent that red-teams other agents' behavior, settled in USDC on 
 Best Walrus Integration at Tatum × Sui. [Live demo](https://sealed-pair.vercel.app)
 `TypeScript` `Sui` `Walrus` `Tatum`
 
-**[Tukar](https://github.com/PugarHuda/tukar): Private Cross-Border Payments on Stellar** 🏅
-Confidential remittance corridors with real fiat in and out, settled with ZK proofs on Soroban.
-`Circom` `Soroban` `Stellar` `ZK`
+**[Jaga](https://github.com/PugarHuda/jaga-agent): Risk Guardian for Trading Agents** ⭐
+An AI risk guardian for agent-traded Binance subaccounts: 8 deterministic rules, MCP client + server, hash-chained audit.
+`JavaScript` `Binance` `MCP`
 
 **[KasPay](https://github.com/PugarHuda/kaspay): Kaspa Payment Gateway** ⭐
-A payment gateway for Kaspa. [Live demo](https://kaspay-flame.vercel.app)
+Accept KAS payments with near-zero fees and instant confirmations. [Live demo](https://kaspay-flame.vercel.app)
 `TypeScript` `Kaspa` `Payments`
 
-**More winners:**
-- ⭐ **[Jaga](https://github.com/PugarHuda/jaga-agent)**: an AI risk guardian for agent-traded Binance subaccounts, with 8 deterministic rules, MCP client + server, and a hash-chained audit
-- 🥈 **[Batas](https://github.com/PugarHuda/batas)**: an autonomous market maker on 1inch Aqua that can't exceed the mandate it was granted
-- 🥈 **[Brownie to Ape](https://github.com/PugarHuda/brownie-to-ape)**: a 17-pass Brownie → ApeWorx migration codemod, validated on Yearn Finance with zero false positives
-- 🥈 **[Layak](https://github.com/PugarHuda/arkiv-ideathon)**: Indonesian crane & forklift fitness certificates modeled as Arkiv entities
-- 🥉 **[Tirai](https://github.com/PugarHuda/tirai)**: a confidential multi-dealer RFQ/OTC desk with atomic DvP settlement, live on Canton Devnet
-- 🥉 **[Amanat](https://github.com/PugarHuda/amanat)**: signed weather intelligence a contract acts on by itself, with ERC-8183 on-chain settlement
+</details>
 
-<img src="divider.svg" alt="" width="100%">
+<details>
+<summary><b>▶ PLAYER STATS</b> · stats card and contribution snake</summary>
+<br>
 
-## 🎒 Inventory
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=PugarHuda&show_icons=true&include_all_commits=true&count_private=true&bg_color=1d2b53&title_color=ffec27&text_color=fff1e8&icon_color=29adff&ring_color=ff004d&border_color=0b1229&border_radius=0" alt="Huda's GitHub stats">
+</p>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PugarHuda/PugarHuda/output/github-snake-dark.svg">
+  <img alt="Snake eating my contribution graph" src="https://raw.githubusercontent.com/PugarHuda/PugarHuda/output/github-snake.svg">
+</picture>
+
+</details>
+
+<details>
+<summary><b>▶ INVENTORY</b> · tech stack</summary>
+<br>
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
@@ -100,22 +131,9 @@ A payment gateway for Kaspa. [Live demo](https://kaspay-flame.vercel.app)
 ![Circom](https://img.shields.io/badge/Circom-ZK-6E40C9?style=flat-square)
 ![MCP](https://img.shields.io/badge/MCP-Agents-D97757?style=flat-square)
 
-## 📊 Player Stats
+</details>
 
-<p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=PugarHuda&show_icons=true&include_all_commits=true&count_private=true&bg_color=1d2b53&title_color=ffec27&text_color=fff1e8&icon_color=29adff&ring_color=ff004d&border_color=0b1229&border_radius=0" alt="Huda's GitHub stats">
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=PugarHuda&layout=compact&langs_count=8&bg_color=1d2b53&title_color=ffec27&text_color=fff1e8&border_color=0b1229&border_radius=0" alt="Top languages">
-</p>
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=PugarHuda&background=1D2B53&border=0B1229&stroke=29ADFF&ring=FF004D&fire=FFA300&currStreakNum=FFF1E8&sideNums=FFF1E8&currStreakLabel=FFEC27&sideLabels=FFEC27&dates=C2C3C7&border_radius=0" alt="Contribution streak">
-</p>
-
-## 🐍 Contribution Snake
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PugarHuda/PugarHuda/output/github-snake-dark.svg">
-  <img alt="Snake eating my contribution graph" src="https://raw.githubusercontent.com/PugarHuda/PugarHuda/output/github-snake.svg">
-</picture>
+<img src="divider.svg" alt="" width="100%">
 
 ## 👀 Spectators
 
@@ -125,8 +143,6 @@ A payment gateway for Kaspa. [Live demo](https://kaspay-flame.vercel.app)
   <a href="https://github.com/PugarHuda/PugarHuda/issues/new?title=%F0%9F%91%BE%20Join%20the%20party&body=Just%20press%20Submit%20and%20your%20pixel%20character%20will%20appear%20on%20Huda%27s%20profile%20in%20about%20a%20minute."><img src="https://img.shields.io/badge/%F0%9F%91%BE_PRESS_START-JOIN_THE_PARTY-FF004D?style=for-the-badge&labelColor=1D2B53" alt="Join the party"></a>
   <br><sub>Stopped by? Press Submit on the issue that opens and your pixel character will show up here.</sub>
 </p>
-
-<img src="divider.svg" alt="" width="100%">
 
 ## 📫 Multiplayer
 

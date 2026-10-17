@@ -1,6 +1,6 @@
 name: Refresh live pixel art
 
-# Hourly: the banner sky follows the time in Jakarta and the quest panel follows the latest push.
+# Hourly: the banner follows the time, weather (Open-Meteo) and holidays in Jakarta and the quest panel follows the latest push.
 # Published to the `live` branch so main's history stays clean.
 on:
   schedule:
@@ -27,7 +27,8 @@ jobs:
         run: |
           mkdir -p dist
           gh api "users/${{ github.repository_owner }}/repos?sort=pushed&per_page=10" > repos.json
-          python3 -I scripts/pixel_art.py live repos.json dist
+          curl -fsS --max-time 20 "https://api.open-meteo.com/v1/forecast?latitude=-6.2&longitude=106.85&current=weather_code,temperature_2m&timezone=Asia%2FJakarta" > weather.json || echo "{}" > weather.json
+          python3 -I scripts/pixel_art.py live repos.json weather.json dist
 
       - uses: crazy-max/ghaction-github-pages@1d6ee9b181a81033a16bd707a1401afa978daab4 # v5.0.0
         with:

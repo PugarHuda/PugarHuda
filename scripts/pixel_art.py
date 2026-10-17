@@ -1,7 +1,8 @@
 """Pixel-art SVGs for the GitHub profile README.
 
-  python pixel_art.py <dir>                        static art: divider, cabinet, world map, dialog
-  python pixel_art.py live <repos.json> <dir>      hourly: day/night banner + current quest
+  python pixel_art.py <dir>                        static art: divider, world map, dialog
+  python pixel_art.py live <repos.json> <weather.json> <dir>
+                                                   hourly: day/night/weather/holiday banner + current quest
   python pixel_art.py guestbook <logins.txt> <out> spectators
 """
 import json
@@ -172,41 +173,6 @@ def divider(out):
         f.write("\n".join(p))
 
 
-def cabinet(out):
-    w, h, s = 900, 190, 4
-    tiers = [  # (count, main, shade) by rank: gold, silver, bronze, other wins
-        (2, YELLOW, ORANGE),
-        (3, "#c2c3c7", "#83769c"),
-        (3, "#e08a3c", "#ab5236"),
-        (6, BLUE, "#065ab5"),
-    ]
-    p = [
-        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" '
-        'shape-rendering="crispEdges" role="img" '
-        'aria-label="Trophy cabinet: 2 gold, 3 silver, 3 bronze and 6 other wins. Level 14">',
-        "<style>@keyframes sp{0%,70%,100%{opacity:0}80%{opacity:1}}.g{animation:sp 2s infinite}</style>",
-        f'<rect width="{w}" height="{h}" fill="{NAVY}"/>',
-        f'<rect x="8" y="8" width="{w - 16}" height="{h - 16}" fill="{BG}"/>',
-        f'<path fill="{YELLOW}" d="{text_path("TROPHY CABINET", 32, 26, 3)}"/>',
-        f'<path fill="{GREEN}" d="{text_path("LV 14", w - 32 - text_width("LV 14", 3), 26, 3)}"/>',
-    ]
-    shelf_y = 150
-    p.append(f'<rect x="24" y="{shelf_y}" width="{w - 48}" height="10" fill="#ab5236"/>')
-    p.append(f'<rect x="24" y="{shelf_y + 10}" width="{w - 48}" height="6" fill="#7e2553"/>')
-    x, step = 36, 60
-    for count, main, shade in tiers:
-        for _ in range(count):
-            y = shelf_y - 12 * s
-            p.append(f'<path fill="{main}" d="{bitmap_path(TROPHY, x, y, s)}"/>')
-            p.append(f'<path fill="{shade}" d="{bitmap_path([r[:3] for r in TROPHY], x, y, s)}"/>')
-            if main == YELLOW:
-                p.append(f'<rect class="g" x="{x + 6 * s}" y="{y + 1 * s}" width="{s}" height="{s}" fill="{WHITE}"/>')
-            x += step
-    p.append("</svg>")
-    with open(out, "w", encoding="utf-8") as f:
-        f.write("\n".join(p))
-
-
 SUN = ["..####..", ".######.", "########", "########", "########", "########", ".######.", "..####.."]
 MOON = ["..####..", ".###....", "###.....", "###.....", "###.....", "###.....", ".###....", "..####.."]
 CLOUD = ["...####.....", ".########...", "############"]
@@ -223,34 +189,112 @@ def sky_for(hour):
     return "day" if 6 <= hour < 17 else "dusk" if 17 <= hour < 19 else "night"
 
 
-def main(out, sky="night"):
+def weather_kind(code):
+    """WMO weather code (Open-Meteo) -> clear / cloudy / rain / storm."""
+    if code is None or code <= 1:
+        return "clear"
+    if code >= 95:
+        return "storm"
+    if 51 <= code <= 67 or 80 <= code <= 82:
+        return "rain"
+    return "cloudy"
+
+
+# ponytail: Lebaran dates are approximate (sidang isbat decides the real day); add years as they come
+LEBARAN = {(2027, 3, 10), (2028, 2, 27), (2029, 2, 14), (2030, 2, 4)}
+
+
+def event_for(day):
+    if day.month == 8 and 10 <= day.day <= 20:
+        return "merdeka"
+    if (day.month, day.day) in ((12, 31), (1, 1)):
+        return "newyear"
+    if any(abs((day - datetime(*d).date()).days) <= 2 for d in LEBARAN):
+        return "lebaran"
+    return None
+
+
+KETUPAT = ["...GG...", "..GYYG..", ".GYGGYG.", "GYGYYGYG", "GYGYYGYG", ".GYGGYG.", "..GYYG..", "...GG..."]
+SPARK = [(0, -1), (1, -1), (1, 0), (1, 1), (0, 1), (-1, 1), (-1, 0), (-1, -1)]
+
+
+def decorations(event):
+    """Seasonal extras drawn along the banner's edges."""
+    if event == "merdeka":  # red-and-white bunting for Independence Day
+        return [
+            f'<path fill="{"#ff004d" if i % 2 == 0 else WHITE}" d="M{x} 8h20l-10 16z"/>'
+            for i, x in enumerate(range(12, W - 30, 26))
+        ]
+    if event == "lebaran":  # hanging ketupat
+        out = []
+        for x in (112, 800):
+            out.append(f'<rect x="{x + 22}" y="8" width="3" height="30" fill="{WHITE}"/>')
+            out.append(colored_sprite(KETUPAT, {"G": "#008751", "Y": YELLOW}, x, 38, 6))
+        return out
+    if event == "newyear":  # fireworks
+        out = []
+        for i, (cx, cy, color) in enumerate(((120, 70, PINK), (790, 64, YELLOW), (830, 196, GREEN), (70, 200, BLUE))):
+            dots = "".join(f'<rect x="{cx + dx * 22 - 3}" y="{cy + dy * 22 - 3}" width="6" height="6"/>' for dx, dy in SPARK)
+            out.append(f'<g class="fw" style="animation-delay:{i * 0.4:.1f}s;transform-origin:{cx}px {cy}px" fill="{color}">{dots}</g>')
+        return out
+    return []
+
+
+def main(out, sky="night", weather="clear", temp=None, event=None):
     random.seed(14)
     frame, bg, shadow, sub_color, tag_color, stars = SKIES[sky]
+    wet = weather in ("rain", "storm")
+    if wet and sky == "day":
+        frame, bg, sub_color = "#5f574f", "#83769c", YELLOW
+    if weather != "clear":
+        stars = 0
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" '
-        f'shape-rendering="crispEdges" role="img" aria-label="HUDA, 14x hackathon winner ({sky} in Jakarta)">',
+        f'shape-rendering="crispEdges" role="img" '
+        f'aria-label="HUDA, 14x hackathon winner ({sky}, {weather} in Jakarta)">',
         "<style>"
         "@keyframes tw{0%,100%{opacity:1}50%{opacity:.15}}"
         "@keyframes bl{0%,49%{opacity:1}50%,100%{opacity:0}}"
         "@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}"
         "@keyframes drift{0%,100%{transform:translateX(0)}50%{transform:translateX(16px)}}"
+        "@keyframes fall{from{transform:translateY(0)}to{transform:translateY(290px)}}"
+        "@keyframes flash{0%,90%,94%,100%{opacity:0}91%{opacity:.7}95%{opacity:.4}}"
+        "@keyframes boom{0%{transform:scale(.2);opacity:1}80%{opacity:1}100%{transform:scale(1.3);opacity:0}}"
         ".s{animation:tw 2.4s steps(2) infinite}"
         ".c{animation:bl 1s infinite}"
         ".t{animation:bob 1.6s steps(2) infinite}"
         ".d{animation:drift 6s steps(4) infinite}"
+        ".r{animation:fall .9s linear infinite}"
+        ".l{animation:flash 6s infinite}"
+        ".fw{animation:boom 1.6s steps(6) infinite}"
         "</style>",
         f'<rect width="{W}" height="{H}" fill="{frame}"/>',
         f'<rect x="8" y="8" width="{W - 16}" height="{H - 16}" fill="{bg}"/>',
     ]
 
-    if sky == "night":
-        parts.append(f'<path fill="{WHITE}" d="{bitmap_path(MOON, 40, 28, 6)}"/>')
-    else:
-        sun_y = 28 if sky == "day" else 190
-        parts.append(f'<path fill="{YELLOW if sky == "day" else ORANGE}" d="{bitmap_path(SUN, 40, sun_y, 6)}"/>')
-    if sky == "day":
-        for x, y in ((740, 36), (60, 196), (790, 200)):
-            parts.append(f'<g class="d"><path fill="{WHITE}" d="{bitmap_path(CLOUD, x, y, 6)}"/></g>')
+    if weather == "clear":
+        if sky == "night":
+            parts.append(f'<path fill="{WHITE}" d="{bitmap_path(MOON, 40, 28, 6)}"/>')
+        else:
+            sun_y = 28 if sky == "day" else 190
+            parts.append(f'<path fill="{YELLOW if sky == "day" else ORANGE}" d="{bitmap_path(SUN, 40, sun_y, 6)}"/>')
+    clouds = ((740, 36), (60, 196), (790, 200))
+    if weather != "clear":
+        clouds += ((30, 30), (130, 14), (650, 12), (690, 224))
+    if sky == "day" or weather != "clear":
+        cloud_color = WHITE if weather == "clear" else "#c2c3c7"
+        for x, y in clouds:
+            parts.append(f'<g class="d"><path fill="{cloud_color}" d="{bitmap_path(CLOUD, x, y, 6)}"/></g>')
+    if wet:
+        for _ in range(45):
+            x, y0 = random.randrange(12, W - 12, 4), random.randrange(-280, -10, 4)
+            delay = random.random() * 0.9
+            parts.append(
+                f'<rect class="r" style="animation-delay:{delay:.2f}s" x="{x}" y="{y0}" width="3" height="12" fill="#c2c3c7"/>'
+            )
+    if weather == "storm":
+        parts.append(f'<rect class="l" x="8" y="8" width="{W - 16}" height="{H - 16}" fill="{WHITE}"/>')
+    parts += decorations(event)
 
     # twinkling stars, kept away from the text block and the moon
     for i in range(stars):
@@ -289,6 +333,9 @@ def main(out, sky="night"):
         f'<rect class="c" x="{gx + text_width(tag, gs) + 2 * gs}" y="{gy}" '
         f'width="{4 * gs}" height="{7 * gs}" fill="{tag_color}"/>'
     )
+    if temp is not None:
+        hud = f"JKT {round(temp)}C"
+        parts.append(f'<path fill="{WHITE}" d="{text_path(hud, W - 24 - text_width(hud, 2), 228, 2)}"/>')
 
     parts.append("</svg>")
     with open(out, "w", encoding="utf-8") as f:
@@ -523,15 +570,21 @@ if __name__ == "__main__":
             names = list(dict.fromkeys(line.strip() for line in f if line.strip()))
         guestbook(names, sys.argv[3])
     elif cmd == "live":
-        # hourly: banner sky follows the time in Jakarta, quest follows the latest push
+        # hourly: banner follows the time, weather and holidays in Jakarta; quest follows the latest push
         now = datetime.now(timezone.utc)
-        d = sys.argv[3]
-        main(f"{d}/banner.svg", sky_for((now + timedelta(hours=7)).hour))
+        local = now + timedelta(hours=7)
+        d = sys.argv[4]
+        try:
+            with open(sys.argv[3], encoding="utf-8") as f:
+                current = json.load(f)["current"]
+            code, temp = current["weather_code"], current["temperature_2m"]
+        except (OSError, ValueError, KeyError, TypeError):
+            code, temp = None, None  # weather API down: clear sky, no temperature
+        main(f"{d}/banner.svg", sky_for(local.hour), weather_kind(code), temp, event_for(local.date()))
         with open(sys.argv[2], encoding="utf-8") as f:
             quest(json.load(f), f"{d}/quest.svg", now)
     else:
         d = sys.argv[1]
         divider(f"{d}/divider.svg")
-        cabinet(f"{d}/cabinet.svg")
         worldmap(f"{d}/worldmap.svg")
         dialog(f"{d}/dialog.svg")
