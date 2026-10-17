@@ -1,4 +1,4 @@
-# Hey, I'm Pugar 👋
+# Hey, I'm Huda 👋
 
 Solo builder shipping at the intersection of **AI agents, Web3, and zero-knowledge**. I hack fast, build things that prove themselves on-chain, and ship real products, usually against a hackathon clock. **14× international hackathon winner.**
 
