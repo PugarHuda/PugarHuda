@@ -22,7 +22,7 @@ QUEST LOG .... sealed bids, ZK settlement, private execution
 
 | RANK | EVENT | PROJECT |
 |:---:|---|---|
-| 🥇 1ST | Portaldot Online Mini Hackathon S1, Builder Tools | FailLens |
+| 🥇 1ST | Portaldot Online Mini Hackathon S1, Builder Tools | pdk |
 | 🥇 1ST | iExec Vibe Coding Challenge 2026 | Diam |
 | 🥈 2ND | ETHGlobal, ENS track | Batas |
 | 🥈 2ND | Codemod Boring AI Hackathon | Brownie to Ape |
@@ -39,8 +39,8 @@ QUEST LOG .... sealed bids, ZK settlement, private execution
 
 ## 🕹️ Winning Projects
 
-**[Portaldot Dev Kit (FailLens)](https://github.com/PugarHuda/portaldot-dev-kit): Transaction Failure Diagnostics** 🥇
-Turns cryptic Portaldot transaction failures into clear, actionable diagnoses.
+**[pdk](https://github.com/PugarHuda/portaldot-dev-kit): Portaldot Dev Kit** 🥇
+Builder tooling for Portaldot. Its FailLens turns cryptic transaction failures into clear, actionable diagnoses.
 `TypeScript` `Portaldot` `DevTools`
 
 **[Diam](https://github.com/PugarHuda/diam): Confidential OTC Desk on iExec Nox** 🥇
