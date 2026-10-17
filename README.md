@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="banner.svg" alt="HUDA, 14x hackathon winner, AI agents / Web3 / ZK" width="100%">
+  <img src="https://raw.githubusercontent.com/PugarHuda/PugarHuda/live/banner.svg" alt="HUDA, 14x hackathon winner, AI agents / Web3 / ZK. The sky follows the time in Jakarta." width="100%">
 </p>
 
 <p align="center">
@@ -8,7 +8,7 @@
 
 ## 👾 Player Profile
 
-Solo builder shipping at the intersection of **AI agents, Web3, and zero-knowledge**. I hack fast, build things that prove themselves on-chain, and ship real products, usually against a hackathon clock. **14× international hackathon winner.**
+<img src="dialog.svg" alt="HUDA: Welcome, traveler! I'm Huda. I build ZK, Web3 and AI agents, solo, against the hackathon clock." width="100%">
 
 ```text
 CLASS ........ Solo Builder
@@ -18,28 +18,32 @@ QUEST LOG .... sealed bids, ZK settlement, private execution
                MCP servers, debugging & diagnostics
 ```
 
+<img src="https://raw.githubusercontent.com/PugarHuda/PugarHuda/live/quest.svg" alt="Current quest: the repo I pushed to most recently" width="100%">
+
 <img src="divider.svg" alt="" width="100%">
 
 ## 🏆 High Scores
 
 <p align="center"><img src="cabinet.svg" alt="Trophy cabinet: 2 gold, 3 silver, 3 bronze and 6 other wins" width="100%"></p>
 
-| RANK | EVENT | PROJECT |
-|:---:|---|---|
-| 🥇 1ST | Portaldot Online Mini Hackathon S1, Builder Tools | pdk |
-| 🥇 1ST | iExec Vibe Coding Challenge 2026 | Diam |
-| 🥈 2ND | ETHGlobal, ENS track | Batas |
-| 🥈 2ND | Codemod Boring AI Hackathon | Brownie to Ape |
-| 🥈 2ND | Arkiv Ideathon 2026, Other track | Layak |
-| 🥉 3RD | Kite AI Global Hackathon 2026 by Encode Club, Novel track | Kutip |
-| 🥉 3RD | HackCanton Season #2 | Tirai |
-| 🥉 3RD | Telegraph Hackathon Season I, Evaluation WASMs | Amanat |
-| 🏅 5TH | Stellar Hacks: Real-World ZK | Tukar |
-| 🏅 6TH | CROO Agent Hackathon | Jailbreak-My-Agent |
-| ⭐ BEST | Tatum × Sui Hackathon, Best Walrus Integration | Sealed Pair |
-| ⭐ WIN | Binance Agent OS Mini Hackathon, Track A | Jaga |
-| ⭐ FINAL | Stellar APAC Hackathon, Grand Finalist | Tukar |
-| ⭐ TOP 10 | Kaspathon, Top 10 Finalist + Community Choice | KasPay |
+<p align="center"><img src="worldmap.svg" alt="World map: 14 cleared hackathon stages, numbered as in the table below" width="100%"></p>
+
+| STAGE | RANK | EVENT | PROJECT |
+|:---:|:---:|---|---|
+| 1 | 🥇 1ST | Portaldot Online Mini Hackathon S1, Builder Tools | pdk |
+| 2 | 🥇 1ST | iExec Vibe Coding Challenge 2026 | Diam |
+| 3 | 🥈 2ND | ETHGlobal, ENS track | Batas |
+| 4 | 🥈 2ND | Codemod Boring AI Hackathon | Brownie to Ape |
+| 5 | 🥈 2ND | Arkiv Ideathon 2026, Other track | Layak |
+| 6 | 🥉 3RD | Kite AI Global Hackathon 2026 by Encode Club, Novel track | Kutip |
+| 7 | 🥉 3RD | HackCanton Season #2 | Tirai |
+| 8 | 🥉 3RD | Telegraph Hackathon Season I, Evaluation WASMs | Amanat |
+| 9 | 🏅 5TH | Stellar Hacks: Real-World ZK | Tukar |
+| 10 | 🏅 6TH | CROO Agent Hackathon | Jailbreak-My-Agent |
+| 11 | ⭐ BEST | Tatum × Sui Hackathon, Best Walrus Integration | Sealed Pair |
+| 12 | ⭐ WIN | Binance Agent OS Mini Hackathon, Track A | Jaga |
+| 13 | ⭐ FINAL | Stellar APAC Hackathon, Grand Finalist | Tukar |
+| 14 | ⭐ TOP 10 | Kaspathon, Top 10 Finalist + Community Choice | KasPay |
 
 ## 🕹️ Winning Projects
 
