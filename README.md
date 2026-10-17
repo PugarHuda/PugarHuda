@@ -12,12 +12,12 @@ Solo builder shipping at the intersection of **AI agents, Web3, and zero-knowled
 🏅 **1st Place**, Portaldot Online Mini Hackathon S1 (Builder Tools track)
 🏅 **1st Place**, iExec Vibe Coding Challenge 2026
 🥉 **3rd Place**, Kite AI Global Hackathon 2026 by Encode Club (Novel track)
-🏅 **Winner**, CROO Agent Hackathon
+🏅 **6th Place**, CROO Agent Hackathon (Jailbreak-My-Agent)
 🏅 **Best Walrus Integration**, Tatum × Sui Hackathon
 🏅 **5th Place**, Stellar Hacks: Real-World ZK (Stellar Development Foundation)
 🏅 **Grand Finalist**, Stellar APAC Hackathon (Payments & Consumer Applications)
 🏅 **Top 10 Finalist + Community Choice**, Kaspathon
-🏅 **Winner**, ETHGlobal (Batas)
+🥈 **2nd Place**, ETHGlobal, ENS track (Batas)
 🥈 **2nd Place**, Codemod Boring AI Hackathon (Brownie to Ape)
 🥈 **2nd Place**, Arkiv Ideathon 2026, Other track (Layak)
 🥉 **3rd Place**, HackCanton Season #2 (Tirai)
@@ -39,7 +39,7 @@ AI research agent on Kite AI that pays the sources it cites. 3rd Place, Kite AI 
 `TypeScript` `Kite AI` `AI Agents`
 
 **[Jailbreak-My-Agent](https://github.com/PugarHuda/jailbreak-my-agent): Paid Red-Teaming Agent** 🏅
-A paid CROO CAP agent that red-teams other agents' behavior, settled in USDC on Base. Winner, CROO Agent Hackathon.
+A paid CROO CAP agent that red-teams other agents' behavior, settled in USDC on Base. 6th Place, CROO Agent Hackathon.
 `TypeScript` `CROO CAP` `Base` `USDC`
 
 **[Sealed Pair](https://github.com/PugarHuda/sealed-pair): Sealed Trading on Sui + Walrus** 🏅
@@ -55,7 +55,7 @@ A payment gateway for Kaspa, Top 10 Finalist and Community Choice at Kaspathon. 
 `TypeScript` `Kaspa` `Payments`
 
 **More winners:**
-- **[Batas](https://github.com/PugarHuda/batas)**: an autonomous market maker on 1inch Aqua that can't exceed the mandate it was granted (ETHGlobal)
+- 🥈 **[Batas](https://github.com/PugarHuda/batas)**: an autonomous market maker on 1inch Aqua that can't exceed the mandate it was granted (ETHGlobal, ENS track)
 - 🥈 **[Brownie to Ape](https://github.com/PugarHuda/brownie-to-ape)**: a 17-pass Brownie → ApeWorx migration codemod, validated on Yearn Finance with zero false positives (Codemod)
 - 🥈 **[Layak](https://github.com/PugarHuda/arkiv-ideathon)**: Indonesian crane & forklift fitness certificates modeled as Arkiv entities (Arkiv Ideathon)
 - 🥉 **[Tirai](https://github.com/PugarHuda/tirai)**: a confidential multi-dealer RFQ/OTC desk with atomic DvP settlement, live on Canton Devnet (HackCanton S2)
