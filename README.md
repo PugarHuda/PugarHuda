@@ -13,6 +13,7 @@ Solo builder shipping at the intersection of **AI agents, Web3, and zero-knowled
 🏅 **1st Place**, iExec Vibe Coding Challenge 2026
 🥉 **3rd Place**, Kite AI Global Hackathon 2026 by Encode Club (Novel track)
 🏅 **6th Place**, CROO Agent Hackathon (Jailbreak-My-Agent)
+🏅 **Winner**, Binance Agent OS Mini Hackathon, Track A (Jaga)
 🏅 **Best Walrus Integration**, Tatum × Sui Hackathon
 🏅 **5th Place**, Stellar Hacks: Real-World ZK (Stellar Development Foundation)
 🏅 **Grand Finalist**, Stellar APAC Hackathon (Payments & Consumer Applications)
@@ -22,8 +23,6 @@ Solo builder shipping at the intersection of **AI agents, Web3, and zero-knowled
 🥈 **2nd Place**, Arkiv Ideathon 2026, Other track (Layak)
 🥉 **3rd Place**, HackCanton Season #2 (Tirai)
 🥉 **3rd Place**, Telegraph Hackathon Season I, Evaluation WASMs track (Amanat)
-<!-- TODO: add the last win -->
-
 ## 🛠 Winning Projects
 
 **[Portaldot Dev Kit (FailLens)](https://github.com/PugarHuda/portaldot-dev-kit): Transaction Failure Diagnostics** 🥇
@@ -55,6 +54,7 @@ A payment gateway for Kaspa, Top 10 Finalist and Community Choice at Kaspathon. 
 `TypeScript` `Kaspa` `Payments`
 
 **More winners:**
+- 🏅 **[Jaga](https://github.com/PugarHuda/jaga-agent)**: an AI risk guardian for agent-traded Binance subaccounts, with 8 deterministic rules, MCP client + server, and a hash-chained audit (Binance Agent OS)
 - 🥈 **[Batas](https://github.com/PugarHuda/batas)**: an autonomous market maker on 1inch Aqua that can't exceed the mandate it was granted (ETHGlobal, ENS track)
 - 🥈 **[Brownie to Ape](https://github.com/PugarHuda/brownie-to-ape)**: a 17-pass Brownie → ApeWorx migration codemod, validated on Yearn Finance with zero false positives (Codemod)
 - 🥈 **[Layak](https://github.com/PugarHuda/arkiv-ideathon)**: Indonesian crane & forklift fitness certificates modeled as Arkiv entities (Arkiv Ideathon)
