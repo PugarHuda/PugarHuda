@@ -251,7 +251,7 @@ def main(out, sky="night", weather="clear", temp=None, event=None):
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" '
         f'shape-rendering="crispEdges" role="img" '
-        f'aria-label="HUDA, 14x hackathon winner ({sky}, {weather} in Jakarta)">',
+        f'aria-label="HUDA, 15x hackathon winner ({sky}, {weather} in Jakarta)">',
         "<style>"
         "@keyframes tw{0%,100%{opacity:1}50%{opacity:.15}}"
         "@keyframes bl{0%,49%{opacity:1}50%,100%{opacity:0}}"
@@ -322,7 +322,7 @@ def main(out, sky="night", weather="clear", temp=None, event=None):
             f'<path fill="{ORANGE}" d="{bitmap_path([r[:3] for r in TROPHY], x, ty + 10, tsz)}"/></g>'
         )
 
-    sub, ss = "14X HACKATHON WINNER", 4
+    sub, ss = "15X HACKATHON WINNER", 4
     sx, sy = centered(sub, ss), 160
     parts.append(f'<path fill="{sub_color}" d="{text_path(sub, sx, sy, ss)}"/>')
 
@@ -421,8 +421,8 @@ def write(out, parts):
         f.write("\n".join(parts + ["</svg>"]))
 
 
-# Stage colours follow the High Scores table order: 2 gold, 3 silver, 3 bronze, 6 other wins
-STAGE_COLORS = [(YELLOW, ORANGE)] * 2 + [("#c2c3c7", "#83769c")] * 3 + [("#e08a3c", "#ab5236")] * 3 + [(BLUE, "#065ab5")] * 6
+# Stage colours follow the High Scores table order: 3 gold, 3 silver, 3 bronze, 6 other wins
+STAGE_COLORS = [(YELLOW, ORANGE)] * 3 + [("#c2c3c7", "#83769c")] * 3 + [("#e08a3c", "#ab5236")] * 3 + [(BLUE, "#065ab5")] * 6
 TREE = ["..##..", ".####.", "######", ".####.", "..##..", "..##.."]
 CASTLE = [
     "#.#.#..#.#.#",
@@ -441,9 +441,10 @@ def worldmap(out):
     road = f"M60 {rows[0]}H840V{rows[1]}H60V{rows[2]}H760"
     stages = [(x, rows[0]) for x in (120, 270, 420, 570, 720)]
     stages += [(x, rows[1]) for x in (780, 630, 480, 330, 180)]
-    stages += [(x, rows[2]) for x in (120, 270, 420, 570)]
+    stages += [(x, rows[2]) for x in (120, 270, 420, 570, 720)]
+    cleared = f"{len(stages)}/{len(stages)} CLEARED"
     p = svg_open(
-        w, h, "World map: 14 cleared hackathon stages, HUDA walking to the castle",
+        w, h, f"World map: {len(stages)} cleared hackathon stages, HUDA walking to the castle",
         "@keyframes f1{0%,49%{opacity:1}50%,100%{opacity:0}}@keyframes f2{0%,49%{opacity:0}50%,100%{opacity:1}}"
         ".a{animation:f1 .4s infinite}.b{animation:f2 .4s infinite}",
     )
@@ -451,7 +452,7 @@ def worldmap(out):
         f'<rect width="{w}" height="{h}" fill="{NAVY}"/>',
         f'<rect x="8" y="8" width="{w - 16}" height="{h - 16}" fill="#008751"/>',
         f'<path fill="{YELLOW}" d="{text_path("WORLD 1: HACKATHON TOUR", 32, 26, 3)}"/>',
-        f'<path fill="{WHITE}" d="{text_path("14/14 CLEARED", w - 32 - text_width("14/14 CLEARED", 3), 26, 3)}"/>',
+        f'<path fill="{WHITE}" d="{text_path(cleared, w - 32 - text_width(cleared, 3), 26, 3)}"/>',
     ]
     random.seed(7)
     for band in (140, 220):

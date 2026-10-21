@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/PugarHuda/PugarHuda/live/banner.svg" alt="HUDA, 14x hackathon winner, AI agents / Web3 / ZK. The sky follows the time, weather and holidays in Jakarta." width="100%">
+  <img src="https://raw.githubusercontent.com/PugarHuda/PugarHuda/live/banner.svg" alt="HUDA, 15x hackathon winner, AI agents / Web3 / ZK. The sky follows the time, weather and holidays in Jakarta." width="100%">
 </p>
 
 ## 👾 Player Profile
@@ -20,24 +20,25 @@ QUEST LOG .... sealed bids, ZK settlement, private execution
 
 ## 🏆 High Scores
 
-<p align="center"><img src="worldmap.svg" alt="World map: 14 cleared hackathon stages, numbered as in the table below" width="100%"></p>
+<p align="center"><img src="worldmap.svg" alt="World map: 15 cleared hackathon stages, numbered as in the table below" width="100%"></p>
 
 | STAGE | RANK | EVENT | PROJECT |
 |:---:|:---:|---|---|
 | 1 | 🥇 1ST | Portaldot Online Mini Hackathon S1, Builder Tools | [pdk](https://github.com/PugarHuda/portaldot-dev-kit) |
 | 2 | 🥇 1ST | iExec Vibe Coding Challenge 2026 | [Diam](https://github.com/PugarHuda/diam) |
-| 3 | 🥈 2ND | ETHGlobal, ENS track | [Batas](https://github.com/PugarHuda/batas) |
-| 4 | 🥈 2ND | Codemod Boring AI Hackathon | [Brownie to Ape](https://github.com/PugarHuda/brownie-to-ape) |
-| 5 | 🥈 2ND | Arkiv Ideathon 2026, Other track | [Layak](https://github.com/PugarHuda/arkiv-ideathon) |
-| 6 | 🥉 3RD | Kite AI Global Hackathon 2026 by Encode Club, Novel track | [Kutip](https://github.com/PugarHuda/kutip) |
-| 7 | 🥉 3RD | HackCanton Season #2 | [Tirai](https://github.com/PugarHuda/tirai) |
-| 8 | 🥉 3RD | Telegraph Hackathon Season I, Evaluation WASMs | [Amanat](https://github.com/PugarHuda/amanat) |
-| 9 | 🏅 5TH | Stellar Hacks: Real-World ZK | [Tukar](https://github.com/PugarHuda/tukar) |
-| 10 | 🏅 6TH | CROO Agent Hackathon | [Jailbreak-My-Agent](https://github.com/PugarHuda/jailbreak-my-agent) |
-| 11 | ⭐ BEST | Tatum × Sui Hackathon, Best Walrus Integration | [Sealed Pair](https://github.com/PugarHuda/sealed-pair) |
-| 12 | ⭐ WIN | Binance Agent OS Mini Hackathon, Track A | [Jaga](https://github.com/PugarHuda/jaga-agent) |
-| 13 | ⭐ FINAL | Stellar APAC Hackathon, Grand Finalist | [Tukar](https://github.com/PugarHuda/tukar) |
-| 14 | ⭐ TOP 10 | Kaspathon, Top 10 Finalist + Community Choice | [KasPay](https://github.com/PugarHuda/kaspay) |
+| 3 | 🥇 1ST | HackCanton Season #3, Grofty Wallet & Onboarding + Best in Track, Financial Applications | [Talang](https://github.com/PugarHuda/talang) |
+| 4 | 🥈 2ND | ETHGlobal, ENS track | [Batas](https://github.com/PugarHuda/batas) |
+| 5 | 🥈 2ND | Codemod Boring AI Hackathon | [Brownie to Ape](https://github.com/PugarHuda/brownie-to-ape) |
+| 6 | 🥈 2ND | Arkiv Ideathon 2026, Other track | [Layak](https://github.com/PugarHuda/arkiv-ideathon) |
+| 7 | 🥉 3RD | Kite AI Global Hackathon 2026 by Encode Club, Novel track | [Kutip](https://github.com/PugarHuda/kutip) |
+| 8 | 🥉 3RD | HackCanton Season #2 | [Tirai](https://github.com/PugarHuda/tirai) |
+| 9 | 🥉 3RD | Telegraph Hackathon Season I, Evaluation WASMs | [Amanat](https://github.com/PugarHuda/amanat) |
+| 10 | 🏅 5TH | Stellar Hacks: Real-World ZK | [Tukar](https://github.com/PugarHuda/tukar) |
+| 11 | 🏅 6TH | CROO Agent Hackathon | [Jailbreak-My-Agent](https://github.com/PugarHuda/jailbreak-my-agent) |
+| 12 | ⭐ BEST | Tatum × Sui Hackathon, Best Walrus Integration | [Sealed Pair](https://github.com/PugarHuda/sealed-pair) |
+| 13 | ⭐ WIN | Binance Agent OS Mini Hackathon, Track A | [Jaga](https://github.com/PugarHuda/jaga-agent) |
+| 14 | ⭐ FINAL | Stellar APAC Hackathon, Grand Finalist | [Tukar](https://github.com/PugarHuda/tukar) |
+| 15 | ⭐ TOP 10 | Kaspathon, Top 10 Finalist + Community Choice | [KasPay](https://github.com/PugarHuda/kaspay) |
 
 ## 🕹️ Stage Select
 
@@ -52,6 +53,10 @@ Builder tooling for Portaldot. Its FailLens turns cryptic transaction failures i
 **[Diam](https://github.com/PugarHuda/diam): Confidential OTC Desk on iExec Nox** 🥇
 Hidden amounts, Vickrey-fair RFQ pricing, AI-native via MCP. [Live demo](https://private-otc.vercel.app)
 `TypeScript` `iExec Nox` `MCP`
+
+**[Talang](https://github.com/PugarHuda/talang): Sealed-Bid Repo Desk on Canton** 🥇
+Lenders quote sealed and never see each other's rates; the whole repo (margin calls, substitution, repurchase, default) runs on ledger, with desk commands signed in the Grofty wallet. [Live desk](https://talang-desk.vercel.app)
+`JavaScript` `Daml` `Canton` `Grofty`
 
 **[Batas](https://github.com/PugarHuda/batas): Mandate-Bound Market Maker** 🥈
 An autonomous market maker on 1inch Aqua that can't exceed the mandate it was granted.
