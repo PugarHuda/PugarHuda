@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/PugarHuda/PugarHuda/live/banner.svg" alt="HUDA, 15x hackathon winner, AI agents / Web3 / ZK. The sky follows the time, weather and holidays in Jakarta." width="100%">
+  <img src="https://raw.githubusercontent.com/PugarHuda/PugarHuda/live/banner.svg" alt="HUDA, 18x hackathon winner, AI agents / Web3 / ZK. The sky follows the time, weather and holidays in Jakarta." width="100%">
 </p>
 
 ## 👾 Player Profile
@@ -20,25 +20,28 @@ QUEST LOG .... sealed bids, ZK settlement, private execution
 
 ## 🏆 High Scores
 
-<p align="center"><img src="worldmap.svg" alt="World map: 15 cleared hackathon stages, numbered as in the table below" width="100%"></p>
+<p align="center"><img src="worldmap.svg" alt="World map: 18 cleared hackathon stages, numbered as in the table below" width="100%"></p>
 
 | STAGE | RANK | EVENT | PROJECT |
 |:---:|:---:|---|---|
 | 1 | 🥇 1ST | Portaldot Online Mini Hackathon S1, Builder Tools | [pdk](https://github.com/PugarHuda/portaldot-dev-kit) |
 | 2 | 🥇 1ST | iExec Vibe Coding Challenge 2026 | [Diam](https://github.com/PugarHuda/diam) |
 | 3 | 🥇 1ST | HackCanton Season #3, Grofty Wallet & Onboarding + Best in Track, Financial Applications | [Talang](https://github.com/PugarHuda/talang) |
-| 4 | 🥈 2ND | ETHGlobal, ENS track | [Batas](https://github.com/PugarHuda/batas) |
+| 4 | 🥈 2ND | ETHOnline 2026 by ETHGlobal, ENS track | [Batas](https://github.com/PugarHuda/batas) |
 | 5 | 🥈 2ND | Codemod Boring AI Hackathon | [Brownie to Ape](https://github.com/PugarHuda/brownie-to-ape) |
 | 6 | 🥈 2ND | Arkiv Ideathon 2026, Other track | [Layak](https://github.com/PugarHuda/arkiv-ideathon) |
-| 7 | 🥉 3RD | Kite AI Global Hackathon 2026 by Encode Club, Novel track | [Kutip](https://github.com/PugarHuda/kutip) |
-| 8 | 🥉 3RD | HackCanton Season #2 | [Tirai](https://github.com/PugarHuda/tirai) |
-| 9 | 🥉 3RD | Telegraph Hackathon Season I, Evaluation WASMs | [Amanat](https://github.com/PugarHuda/amanat) |
-| 10 | 🏅 5TH | Stellar Hacks: Real-World ZK | [Tukar](https://github.com/PugarHuda/tukar) |
-| 11 | 🏅 6TH | CROO Agent Hackathon | [Jailbreak-My-Agent](https://github.com/PugarHuda/jailbreak-my-agent) |
-| 12 | ⭐ BEST | Tatum × Sui Hackathon, Best Walrus Integration | [Sealed Pair](https://github.com/PugarHuda/sealed-pair) |
-| 13 | ⭐ WIN | Binance Agent OS Mini Hackathon, Track A | [Jaga](https://github.com/PugarHuda/jaga-agent) |
-| 14 | ⭐ FINAL | Stellar APAC Hackathon, Grand Finalist | [Tukar](https://github.com/PugarHuda/tukar) |
-| 15 | ⭐ TOP 10 | Kaspathon, Top 10 Finalist + Community Choice | [KasPay](https://github.com/PugarHuda/kaspay) |
+| 7 | 🥈 2ND | Indonesia Hack Web3, AI Agent track | — |
+| 8 | 🥈 2ND | Cleanverse Build: Trusted Assets Hackathon, RWA track | [Saksi](https://github.com/PugarHuda/saksi) |
+| 9 | 🥉 3RD | Kite AI Global Hackathon 2026 by Encode Club, Novel track | [Kutip](https://github.com/PugarHuda/kutip) |
+| 10 | 🥉 3RD | HackCanton Season #2 | [Tirai](https://github.com/PugarHuda/tirai) |
+| 11 | 🥉 3RD | Telegraph Hackathon Season I, Evaluation WASMs | [Amanat](https://github.com/PugarHuda/amanat) |
+| 12 | 🏅 5TH | Stellar Hacks: Real-World ZK | [Tukar](https://github.com/PugarHuda/tukar) |
+| 13 | 🏅 6TH | CROO Agent Hackathon | [Jailbreak-My-Agent](https://github.com/PugarHuda/jailbreak-my-agent) |
+| 14 | ⭐ BEST | Tatum × Sui Hackathon, Best Walrus Integration | [Sealed Pair](https://github.com/PugarHuda/sealed-pair) |
+| 15 | ⭐ WIN | Binance Agent OS Mini Hackathon, Track A | [Jaga](https://github.com/PugarHuda/jaga-agent) |
+| 16 | ⭐ WIN | Terminal 3 Agent Dev Kit Bounty Challenge | [Gatekeeper Agent](https://github.com/PugarHuda/t3-gatekeeper-agent) |
+| 17 | ⭐ FINAL | Stellar APAC Hackathon, Grand Finalist | [Tukar](https://github.com/PugarHuda/tukar) |
+| 18 | ⭐ TOP 10 | Kaspathon, Top 10 Finalist + Community Choice | [KasPay](https://github.com/PugarHuda/kaspay) |
 
 ## 🕹️ Stage Select
 
@@ -70,6 +73,10 @@ A 17-pass Brownie → ApeWorx migration codemod, validated on Yearn Finance with
 Indonesian crane & forklift fitness certificates modeled as Arkiv entities.
 `Arkiv` `Data Modeling`
 
+**[Saksi](https://github.com/PugarHuda/saksi): Confidential Holder Register for RWAs** 🥈
+Every position witnessed, disclosure only when asked. Built on Cleanverse CVI and CVA, deployed on Monad testnet. [Live console](https://saksi-gilt.vercel.app)
+`Solidity` `Cleanverse` `Monad` `RWA`
+
 **[Kutip](https://github.com/PugarHuda/kutip): Citations That Pay** 🥉
 AI research agent on Kite AI that pays the sources it cites.
 `TypeScript` `Kite AI` `AI Agents`
@@ -97,6 +104,10 @@ Best Walrus Integration at Tatum × Sui. [Live demo](https://sealed-pair.vercel.
 **[Jaga](https://github.com/PugarHuda/jaga-agent): Risk Guardian for Trading Agents** ⭐
 An AI risk guardian for agent-traded Binance subaccounts: 8 deterministic rules, MCP client + server, hash-chained audit.
 `JavaScript` `Binance` `MCP`
+
+**[Gatekeeper Agent](https://github.com/PugarHuda/t3-gatekeeper-agent): VC-Gated Agent with a Hardware Mandate** ⭐
+A delegated AI agent on the Terminal 3 Agent Dev Kit: BBS+ verifiable-credential eligibility gate plus a TEE-enforced mandate it cannot widen.
+`TypeScript` `Terminal 3` `TEE` `BBS+`
 
 **[KasPay](https://github.com/PugarHuda/kaspay): Kaspa Payment Gateway** ⭐
 Accept KAS payments with near-zero fees and instant confirmations. [Live demo](https://kaspay-flame.vercel.app)
